@@ -3,8 +3,24 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+@export var pickaxe_scene: PackedScene
 
+var pickaxe_instance # Variable to hold the instantiated pickaxe
+func _ready():
+	if pickaxe_scene:
+		pickaxe_instance = pickaxe_scene.instantiate()
+		add_child(pickaxe_instance)
+		#pickaxe_instance.visible = false  # Initially hide it, assuming it has a visible component
 
+func _process(delta: float) -> void:
+	if Input.is_mouse_button_pressed( 1 ): # Left click
+		var mouse_position = $Camera2D.get_global_mouse_position()
+		pickaxe_instance.activate(global_position, mouse_position)
+	
+	# Check for bomb spawn input
+	if Input.is_action_just_pressed("use_item"):
+		spawn_bomb()
+		
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -24,9 +40,6 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
-	# Check for bomb spawn input
-	if Input.is_action_just_pressed("use_item"):
-		spawn_bomb()
 
 @export var bomb_scene: PackedScene  # Assign Bomb.tscn in the Inspector
 func spawn_bomb():

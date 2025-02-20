@@ -53,7 +53,7 @@ func explode():
 
 		# If the split status is true, reset the timer for the shortest time possible
 		if split_status:
-			$Timer.wait_time = 0.1
+			$Timer.wait_time = 0.05
 			$Timer.start()
 		else:
 			print_debug("BOOM!")
