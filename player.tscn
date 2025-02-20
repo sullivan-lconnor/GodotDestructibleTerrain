@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqxs65hlnrrdl"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_gelh8"]
+[ext_resource type="Texture2D" uid="uid://bw6gbhu8b700h" path="res://LilGuy-Sheet.png" id="2_l0mg6"]
+[ext_resource type="PackedScene" uid="uid://bekuxw06biiju" path="res://bomb.tscn" id="3_pi0c0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u75so"]
+size = Vector2(16, 18)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_gelh8")
+bomb_scene = ExtResource("3_pi0c0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_u75so")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_l0mg6")
+hframes = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
