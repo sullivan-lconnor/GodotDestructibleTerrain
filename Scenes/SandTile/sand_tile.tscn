@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://cjjhbqrkit8u0"]
 
-[ext_resource type="Script" path="res://sand_tile.gd" id="1_qbtil"]
-[ext_resource type="Texture2D" uid="uid://ccmjourxddhed" path="res://floortile.png" id="2_rbuxs"]
+[ext_resource type="Script" path="res://Scenes/SandTile/sand_tile.gd" id="1_0yfby"]
+[ext_resource type="Texture2D" uid="uid://ccmjourxddhed" path="res://Assets/floortile.png" id="2_ndjlg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s1omk"]
 size = Vector2(32, 32)
 
 [node name="SandTile" type="StaticBody2D"]
-script = ExtResource("1_qbtil")
+script = ExtResource("1_0yfby")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_rbuxs")
+texture = ExtResource("2_ndjlg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_s1omk")

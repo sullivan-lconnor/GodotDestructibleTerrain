@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bqxs65hlnrrdl"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_gelh8"]
-[ext_resource type="Texture2D" uid="uid://bw6gbhu8b700h" path="res://LilGuy-Sheet.png" id="2_l0mg6"]
-[ext_resource type="PackedScene" uid="uid://bekuxw06biiju" path="res://bomb.tscn" id="3_pi0c0"]
+[ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_gelh8"]
+[ext_resource type="Texture2D" uid="uid://bw6gbhu8b700h" path="res://Assets/LilGuy-Sheet.png" id="2_l0mg6"]
+[ext_resource type="PackedScene" uid="uid://bekuxw06biiju" path="res://Scenes/Bomb/bomb.tscn" id="3_pi0c0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u75so"]
 size = Vector2(16, 18)

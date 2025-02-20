@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bw6gbhu8b700h"
-path="res://.godot/imported/LilGuy-Sheet.png-5fdd44dfa8c94a6ab0d5b12d5a79fe48.ctex"
+uid="uid://ggg1ot85nm47"
+path="res://.godot/imported/Target.png-bf70770ca792de7a6d0c507499a60e53.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://LilGuy-Sheet.png"
-dest_files=["res://.godot/imported/LilGuy-Sheet.png-5fdd44dfa8c94a6ab0d5b12d5a79fe48.ctex"]
+source_file="res://Assets/Target.png"
+dest_files=["res://.godot/imported/Target.png-bf70770ca792de7a6d0c507499a60e53.ctex"]
 
 [params]
 

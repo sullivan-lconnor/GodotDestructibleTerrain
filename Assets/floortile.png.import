@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cese5tjklqs2c"
-path="res://.godot/imported/Dirt.png-cc1fb26691f8e5bcf036ffa7faba0c81.ctex"
+uid="uid://ccmjourxddhed"
+path="res://.godot/imported/floortile.png-6f36e2052466511df3878db33858a17b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Dirt.png"
-dest_files=["res://.godot/imported/Dirt.png-cc1fb26691f8e5bcf036ffa7faba0c81.ctex"]
+source_file="res://Assets/floortile.png"
+dest_files=["res://.godot/imported/floortile.png-6f36e2052466511df3878db33858a17b.ctex"]
 
 [params]
 
